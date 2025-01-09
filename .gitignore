@@ -1,0 +1,48 @@
+# Sistema operativo o archivos específicos de entorno
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+*.lock
+
+# Unity generados automáticamente
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+
+# Archivos de colisiones
+*.pidb
+*.booproj
+*.pidb.meta
+
+# Archivos Visual Studio / Rider
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vscode/
+
+# Archivos relacionados con IDEs
+.idea/
+*.tmproj
+*.csproj
+*.unityproj
+
+# Carpetas ocultas relacionadas con Unity
+.gradle/
+.eject/
+
+# Otras configuraciones innecesarias
+*.apk
+*.unitypackage
+*.asset
+*.mp4
+*.mov
+*.log
+*.tga
