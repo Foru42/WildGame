@@ -7,11 +7,7 @@
       "RelativeMoniker": "D:0:0:{4BFE98B5-2B2F-801E-1A32-2693C2F67A20}|Assembly-CSharp.csproj|solutionrelative:assets\\bumperrebotea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BFE98B5-2B2F-801E-1A32-2693C2F67A20}|Assembly-CSharp.csproj|c:\\users\\isard\\unity\\pinball wildgame\\assets\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BFE98B5-2B2F-801E-1A32-2693C2F67A20}|Assembly-CSharp.csproj|solutionrelative:assets\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BFE98B5-2B2F-801E-1A32-2693C2F67A20}|Assembly-CSharp.csproj|C:\\Users\\isard\\Unity\\Pinball WildGame\\assets\\plungerezfuntziona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4BFE98B5-2B2F-801E-1A32-2693C2F67A20}|Assembly-CSharp.csproj|c:\\users\\isard\\unity\\pinball wildgame\\assets\\plungerezfuntziona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BFE98B5-2B2F-801E-1A32-2693C2F67A20}|Assembly-CSharp.csproj|solutionrelative:assets\\plungerezfuntziona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -34,22 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ScoreManager.cs",
-              "DocumentMoniker": "C:\\Users\\isard\\Unity\\Pinball WildGame\\Assets\\ScoreManager.cs",
-              "RelativeDocumentMoniker": "Assets\\ScoreManager.cs",
-              "ToolTip": "C:\\Users\\isard\\Unity\\Pinball WildGame\\Assets\\ScoreManager.cs",
-              "RelativeToolTip": "Assets\\ScoreManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T09:16:21.257Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -58,14 +40,14 @@
               "RelativeDocumentMoniker": "Assets\\BumperRebotea.cs",
               "ToolTip": "C:\\Users\\isard\\Unity\\Pinball WildGame\\Assets\\BumperRebotea.cs",
               "RelativeToolTip": "Assets\\BumperRebotea.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-17T09:13:44.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PlungerEzfuntziona.cs",
               "DocumentMoniker": "C:\\Users\\isard\\Unity\\Pinball WildGame\\Assets\\PlungerEzfuntziona.cs",
               "RelativeDocumentMoniker": "Assets\\PlungerEzfuntziona.cs",
@@ -73,11 +55,12 @@
               "RelativeToolTip": "Assets\\PlungerEzfuntziona.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAxwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T09:06:47.031Z"
+              "WhenOpened": "2025-01-17T09:06:47.031Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "JokoaBukatu.cs",
               "DocumentMoniker": "C:\\Users\\isard\\Unity\\Pinball WildGame\\Assets\\JokoaBukatu.cs",
               "RelativeDocumentMoniker": "Assets\\JokoaBukatu.cs",
@@ -89,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "JokoaHAsita.cs",
               "DocumentMoniker": "C:\\Users\\isard\\Unity\\Pinball WildGame\\Assets\\JokoaHAsita.cs",
               "RelativeDocumentMoniker": "Assets\\JokoaHAsita.cs",
@@ -101,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "PlungerAnimazioa.cs",
               "DocumentMoniker": "C:\\Users\\isard\\Unity\\Pinball WildGame\\Assets\\PlungerAnimazioa.cs",
               "RelativeDocumentMoniker": "Assets\\PlungerAnimazioa.cs",
