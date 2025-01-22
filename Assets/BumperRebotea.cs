@@ -1,9 +1,8 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class BumperRebotea : MonoBehaviour
 {
-    public float fuerzaRebote = 1f; // Fuerza del rebote exagerado
+    public float fuerzaRebote = 5f; // Fuerza del rebote moderada
     private ScoreManager scoreManager; // Referencia al ScoreManager
 
     private void Start()
@@ -17,18 +16,21 @@ public class BumperRebotea : MonoBehaviour
         // Verificar si la bola colisiona con el bumper
         if (collision.gameObject.CompareTag("Ball"))
         {
-            // Aplicar un rebote exagerado
+            // Aplicar un rebote moderado
             Rigidbody bolaRigidbody = collision.gameObject.GetComponent<Rigidbody>();
             if (bolaRigidbody != null)
             {
-                // Aplicar una fuerza de rebote exagerada
-                bolaRigidbody.AddForce(collision.contacts[0].normal * fuerzaRebote, ForceMode.Impulse);
+                // Determinar la dirección del rebote
+                Vector3 direccionRebote = collision.contacts[0].normal.normalized;
+
+                // Aplicar una fuerza moderada sin depender de la velocidad de entrada
+                bolaRigidbody.AddForce(direccionRebote * fuerzaRebote, ForceMode.Impulse);
             }
 
             // Incrementar la puntuación
             if (scoreManager != null)
             {
-                scoreManager.AumentarPuntuacion(1); // Aumenta 1 punto por colisión
+                scoreManager.AumentarPuntuacion(2); // Aumenta 1 punto por colisión
             }
         }
     }

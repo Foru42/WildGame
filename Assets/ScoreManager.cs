@@ -1,25 +1,38 @@
-using TMPro;  // Asegúrate de incluir el espacio de nombres de TextMesh Pro
 using UnityEngine;
+using UnityEngine.UI; // Importante para usar el Text de UI
 
 public class ScoreManager : MonoBehaviour
 {
-    public TextMeshProUGUI marcadorText; // Referencia al componente TextMeshProUGUI
-    private int puntuacion = 0;
+    public int puntuacion = 0;  // Variable para llevar el conteo de la puntuación
+    public Text marcadorText;   // Referencia al texto donde se muestra la puntuación
 
-    void Start()
+    private void Start()
     {
-        ActualizarMarcador(); // Actualizar al principio
-    }
+        // Si el marcadorText no está asignado, buscar el objeto de texto en el Canvas
+        if (marcadorText == null)
+        {
+            marcadorText = FindFirstObjectByType<Text>(); // Buscar el Text en la escena
+        }
 
-    public void AumentarPuntuacion(int puntos)
-    {
-        puntuacion += puntos;
+        // Actualizar el marcador al inicio
         ActualizarMarcador();
     }
 
-    // Método público para actualizar el marcador
-    public void ActualizarMarcador()
+    public void AumentarPuntuacion(int cantidad)
     {
-        marcadorText.text = "Puntuación: " + puntuacion.ToString();
+        // Incrementar la puntuación
+        puntuacion += cantidad;
+        // Actualizar el marcador en pantalla
+        ActualizarMarcador();
+    }
+
+    private void ActualizarMarcador()
+    {
+        // Actualizar el texto con la nueva puntuación
+        marcadorText.text = "Puntuazioa: " + puntuacion.ToString();
+    }
+    public int GetPuntuacion()
+    {
+        return puntuacion;
     }
 }

@@ -21,12 +21,18 @@ UserSettings/
 *.booproj
 *.pidb.meta
 
-# Archivos Visual Studio / Rider
-*.suo
+# Visual Studio/JetBrains Rider generated files
+.vs/
+*.csproj
+*.sln
 *.user
-*.userosscache
-*.sln.docstates
-.vscode/
+.idea/
+*.suo
+*.userprefs
+*.pidb
+*.unityproj
+*.booproj
+*.svd
 
 # Archivos relacionados con IDEs
 .idea/
