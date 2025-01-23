@@ -3,12 +3,13 @@ using UnityEngine;
 public class FlipperEsku : MonoBehaviour
 {
     public KeyCode teclaAccion = KeyCode.RightArrow; // Tecla para activar el flipper
-    public float fuerzaMotor = 1000f; // Fuerza del motor
-    public float velocidadMotor = 100f; // Velocidad de rotación del motor
-    public bool invertirMovimiento = false; // Invertir la dirección del flipper si es necesario
+    public float fuerzaMotor = 1000f;               // Fuerza del motor
+    public float velocidadMotor = 100f;            // Velocidad de rotación del motor
+    public bool invertirMovimiento = false;        // Invertir la dirección del flipper si es necesario
 
     private HingeJoint bisagra;
     private JointMotor motor;
+    private bool isTouchActive = false; // Variable para controles táctiles
 
     void Start()
     {
@@ -25,8 +26,8 @@ public class FlipperEsku : MonoBehaviour
 
     void Update()
     {
-        // Detectar la tecla para activar el flipper
-        if (Input.GetKey(teclaAccion))
+        // Detectar la tecla para activar el flipper (para teclado)
+        if (Input.GetKey(teclaAccion) || isTouchActive)
         {
             // Activar el motor para mover el flipper
             motor.targetVelocity = invertirMovimiento ? -velocidadMotor : velocidadMotor;
@@ -39,5 +40,16 @@ public class FlipperEsku : MonoBehaviour
 
         // Actualizar el motor en el Hinge Joint
         bisagra.motor = motor;
+    }
+
+    // Métodos públicos para controles táctiles
+    public void ActivateFlipper()
+    {
+        isTouchActive = true;
+    }
+
+    public void DeactivateFlipper()
+    {
+        isTouchActive = false;
     }
 }

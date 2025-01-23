@@ -8,8 +8,10 @@ public class PlungerAnimazioa : MonoBehaviour
     public float fuerzaMaxima = 1500f; // Fuerza máxima de disparo
     public float tiempoMaximoCarga = 2f; // Tiempo necesario para alcanzar la fuerza máxima
 
+    private bool isTouchActive = false; // Variable para controles táctiles
+    private float tiempoCargando = 0f; // Tiempo que se ha mantenido presionado
+
     private bool isCompressing = false; // Para saber si el plunger está comprimido
-    private float tiempoCargando = 0f; // Tiempo que se ha mantenido presionado el espacio
 
     void Start()
     {
@@ -23,20 +25,35 @@ public class PlungerAnimazioa : MonoBehaviour
 
     void Update()
     {
-        // Detectar si el espacio está presionado
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || isTouchActive)
         {
+            // Comprimir el plunger mientras se mantenga el toque
             animator.SetBool("isCompressing", true);
-            isCompressing = true; // Marcar como comprimido
-            tiempoCargando += Time.deltaTime; // Incrementar el tiempo de carga
+            isCompressing = true;
+            tiempoCargando += Time.deltaTime;
         }
-        else if (isCompressing) // Detectar cuando se suelta el espacio
+        else if (tiempoCargando > 0f)
         {
+            // Liberar el plunger cuando se suelte el toque
             animator.SetBool("isCompressing", false);
-            isCompressing = false; // Restablecer estado
-            DispararBola(); // Disparar la bola
+            DispararBola();
+            isCompressing = false;
             tiempoCargando = 0f; // Restablecer el tiempo de carga
         }
+    }
+
+
+
+    public void ActivatePlunger()
+    {
+        // Activar el estado táctil
+        isTouchActive = true;
+    }
+
+    public void DeactivatePlunger()
+    {
+        // Desactivar el estado táctil
+        isTouchActive = false;
     }
 
     void DispararBola()

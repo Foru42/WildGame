@@ -1,0 +1,10 @@
+# ninja log v5
+43	1984	7593309670302476	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	fd27c713ade9c004
+62	2095	7593309671432742	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	ad07a21c196f270
+1	2546	7593309672145784	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	258da6aa00db03f0
+31	2547	7593309675291842	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	b6859644801ed014
+68	2547	7593309674942684	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	95df04b5051e38c9
+15	2576	7593309676066120	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	1f16c851bda55b3f
+37	2730	7593309677584302	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	f699dafe4eae27c8
+23	3167	7593309682205799	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	979f2c73dd2329d2
+3168	3321	7593309683777243	C:/Users/isard/Unity/Pinball WildGame/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/64v6e4g4/obj/arm64-v8a/libgame.so	5f61701e71a29279
